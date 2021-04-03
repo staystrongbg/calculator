@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+}
+.main-container {
+  margin: 2rem auto;
+  background-color: whitesmoke;
+  width: 80vw;
+  max-width: 600px;
+  min-width: max-content;
+  font-size: 2rem;
+  color: #000;
+  /* border: 1px solid purple; */
+  border-radius: 0.5rem;
+}
+.output {
+  color: #444;
+  font-size: 3rem;
+  font-weight: bolder;
+  padding: 1.35rem;
+  text-align: right;
+  background-color: rgb(180, 156, 156);
+  /* border: 1px solid purple; */
+  border-radius: 0.5rem;
+  font-family: 'Digital-7 Italic';
+  min-height: 78.2px;
+  width: 100%;
+}
+.display {
+  padding: 1rem;
+  /* background-color: rgba(135, 206, 235, 0.2); */
+  background-color: rgba(18, 15, 32, 0.836);
+
+  min-width: 468px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  min-height: 100px;
+}
+.keypad {
+  /* border: 2px solid seagreen; */
+  background-color: rgba(135, 206, 235, 0.2);
+  background-color: rgba(18, 15, 32, 0.836);
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr auto;
+  padding: 0.75rem;
+  color: rgba(187, 102, 4, 0.863);
+  font-family: 'Digital-7';
+  font-weight: bolder;
+  cursor: pointer;
+}
+.numerical {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.cl,
+.number,
+.operation {
+  /* border: 1px solid purple; */
+  text-align: center;
+  /* padding: 7px; */
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.number {
+  background-color: rgb(23, 12, 53);
+  margin: 0 0 2px 2px;
+  padding: 2rem;
+}
+.operation {
+  margin: 0 2px 2px 2px;
+  background-color: rgb(75, 29, 36);
+}
+.equal {
+  background-color: rgb(9, 7, 172);
+  color: white;
+}
+.comma {
+  background-color: rgb(7, 6, 20);
+}
+.clear {
+  color: whitesmoke;
+  display: grid;
+}
+.cl {
+  background-color: rgb(180, 40, 15);
+  margin: 0 0 2px 2px;
+}

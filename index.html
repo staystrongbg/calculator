@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <title>calculator</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="display">
+      <div class="output">
+
+      </div>
+    </div>
+
+    <div class="keypad">
+      <div class="clear">
+        <div data-option="clear" class="cl">C</div>
+        <div data-option="delete" class="cl">del</div>
+        <div data-option="undo" class="cl">ANS</div>
+        <div data-option="redo" class="cl">%</div>
+      </div>
+      <div class="numerical">
+        <div id='1' class='number'>1</div>
+        <div id='2' class='number'>2</div>
+        <div id='3' class='number'>3</div>
+        <div id='4' class='number'>4</div>
+        <div id='5' class='number'>5</div>
+        <div id='6' class='number'>6</div>
+        <div id='7' class='number'>7</div>
+        <div id='8' class='number'>8</div>
+        <div id='9' class='number'>9</div>
+        <div id='0' class='number'>0</div>
+        <div data-option="comma" class='option number comma'>.</div>
+        <div data-option='equal-sign' class='option number equal'>=</div>
+
+
+      </div>
+
+      <div class=" operations">
+        <div data-operator="multiply" class="operation">*</div>
+        <div data-operator="divide" class="operation">
+          <i class="fas fa-divide"></i>
+        </div>
+        <div data-operator="add" class="operation">+</div>
+        <div data-operator="subtract" class="operation">-</div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
