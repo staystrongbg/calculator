@@ -33,12 +33,17 @@ function selectOption(e) {
     let textOutput = output.textContent;
     let newOutput = textOutput.slice(0, textOutput.length - 1);
     output.textContent = newOutput;
+    output.textContent === '' ? defultOutput() : null;
   }
 }
 
 function defultOutput() {
   output.textContent = 0;
+  if (output.textContent === '') {
+    output.textContent = '0';
+  }
 }
+
 function mouseDown(e) {
   e.currentTarget.style.backgroundColor = 'blue';
 }
@@ -63,9 +68,10 @@ function selectOperation(e) {
   let newNum = parseInt(output.textContent.trim());
 
   if (operatorFn === 'add') {
+    // output.textContent = '+';
     memory += newNum;
   } else if (operatorFn === 'subtract') {
-    memory -= newNum;
+    memory = memory - newNum;
   }
   output.textContent = memory;
 }

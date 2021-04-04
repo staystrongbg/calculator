@@ -5,54 +5,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
   <title>calculator</title>
 </head>
 
 <body>
-  <div class="main-container">
-    <div class="display">
-      <div class="output">
-
+  <div class="container">
+    <div class="calculator">
+      <!-- <h2>calculator</h2> -->
+      <div class="input-container">
+        <input type="text" type='text' class="calculator-screen" disabled=''>
       </div>
-    </div>
-
-    <div class="keypad">
-      <div class="clear">
-        <div data-option="clear" class="cl">C</div>
-        <div data-option="delete" class="cl">del</div>
-        <div data-option="undo" class="cl">ANS</div>
-        <div data-option="redo" class="cl">%</div>
-      </div>
-      <div class="numerical">
-        <div id='1' class='number'>1</div>
-        <div id='2' class='number'>2</div>
-        <div id='3' class='number'>3</div>
-        <div id='4' class='number'>4</div>
-        <div id='5' class='number'>5</div>
-        <div id='6' class='number'>6</div>
-        <div id='7' class='number'>7</div>
-        <div id='8' class='number'>8</div>
-        <div id='9' class='number'>9</div>
-        <div id='0' class='number'>0</div>
-        <div data-option="comma" class='option number comma'>.</div>
-        <div data-option='equal-sign' class='option number equal'>=</div>
-
-
-      </div>
-
-      <div class=" operations">
-        <div data-operator="multiply" class="operation">*</div>
-        <div data-operator="divide" class="operation">
+      <div class="calculator-keys">
+        <button type='button' class="btn operator" value='+'>+</button>
+        <button type='button' class="btn operator" value='-'>-</button>
+        <button type='button' class="btn operator" value='*'>*</button>
+        <button type='button' class="btn operator" value='/'>
           <i class="fas fa-divide"></i>
-        </div>
-        <div data-operator="add" class="operation">+</div>
-        <div data-operator="subtract" class="operation">-</div>
+        </button>
+
+        <button class='btn' type="button" value='1'>1</button>
+        <button class='btn' type="button" value='2'>2</button>
+        <button class='btn' type="button" value='3'>3</button>
+        <button class='btn' type="button" value='4'>4</button>
+        <button class='btn' type="button" value='5'>5</button>
+        <button class='btn' type="button" value='6'>6</button>
+        <button class='btn' type="button" value='7'>7</button>
+        <button class='btn' type="button" value='8'>8</button>
+        <button class='btn' type="button" value='9'>9</button>
+        <button class='btn' type="button" value='0'>0</button>
+        <button class='btn decimal' type="button" value='.'>.</button>
+        <button class='btn all-clear' type="button" value='all-clear'>AC</button>
+        <button class='btn equal-sign operator' type="button" value='='>=</button>
       </div>
     </div>
   </div>
-  <script src="./script.js"></script>
+  <script src="./app.js"></script>
+  <!-- <script src="https://use.fontawesome.com/1172137e0c.js"></script> -->
 
 </body>
 
