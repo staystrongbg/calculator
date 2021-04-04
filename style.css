@@ -68,15 +68,16 @@ button {
   background-color: #4e9ed4;
 } */
 .equal-sign {
-  background-color: #4e9ed4;
-  border-color: #337cac;
+  background-color: #337cac;
+  border: none;
+  /* border-color: #337cac; */
   color: #f1f1f1;
   height: 100%;
   grid-area: 3/4/6/5;
 }
-.equal-sign:hover {
+/* .equal-sign:hover {
   background-color: #4e9ed4;
-}
+} */
 .calculator-keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
